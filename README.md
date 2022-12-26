@@ -21,7 +21,7 @@ The objectives of this project is to:
 
 ## Live Demo
 
-[Portfolio Link](https://mutai-gilbert.github.io/Responsive-Personal-Porfolio/)
+[Portfolio Link](https://mutai-gilbert.github.io/My-Portfolio-Website/)
 
 ## Getting Started
 
@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-To clone the repository run the command `git clone https://github.com/Mutai-Gilbert/Responsive-Personal-Porfolio.git`
+To clone the repository run the command `git clone https://github.com/Mutai-Gilbert/My-Portfolio-Website.git`
 
 ## Authors
 
