@@ -1,10 +1,10 @@
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # General
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #444;
 }
 
 a {
@@ -17,13 +17,18 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Roboto", sans-serif;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Preloader
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 #preloader {
   position: fixed;
   top: 0;
@@ -35,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
 }
 
-#preloader:before {
+#preloader::before {
   content: "";
   position: fixed;
   top: calc(50% - 30px);
@@ -53,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -62,14 +68,15 @@ h1, h2, h3, h4, h5, h6 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Back to top button
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -100,18 +107,18 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Top Bar
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 #topbar {
   background: #106eea;
   height: 40px;
@@ -126,7 +133,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-#topbar .contact-info i a, #topbar .contact-info i span {
+#topbar .contact-info i a,
+#topbar .contact-info i span {
   padding-left: 5px;
   color: #fff;
 }
@@ -153,15 +161,15 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Header
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 #header {
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
   height: 86px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #header.fixed-top {
@@ -179,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo a {
-  color: #222222;
+  color: #222;
 }
 
 #header .logo a span {
@@ -194,11 +202,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 70px;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Navigation Menu
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
+
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -221,26 +230,28 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0 10px 28px;
 }
 
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 3px;
   font-size: 15px;
   font-weight: 600;
-  color: #222222;
+  color: #222;
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
 }
 
-.navbar a i, .navbar a:focus i {
+.navbar a i,
+.navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
 
-.navbar > ul > li > a:before {
+.navbar > ul > li > a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -249,16 +260,21 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   background-color: #106eea;
   visibility: hidden;
-  width: 0px;
+  width: 0;
   transition: all 0.3s ease-in-out 0s;
 }
 
-.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+.navbar a:hover::before,
+.navbar li:hover > a::before,
+.navbar .active::before {
   visibility: visible;
   width: 100%;
 }
 
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
   color: #106eea;
 }
 
@@ -273,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   visibility: hidden;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
 
@@ -290,7 +306,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
   color: #106eea;
 }
 
@@ -317,16 +335,17 @@ h1, h2, h3, h4, h5, h6 {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
+
   .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
-  color: #222222;
+  color: #222;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -342,6 +361,7 @@ h1, h2, h3, h4, h5, h6 {
   .mobile-nav-toggle {
     display: block;
   }
+
   .navbar ul {
     display: none;
   }
@@ -381,18 +401,22 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a {
   padding: 10px 20px;
   font-size: 15px;
-  color: #222222;
+  color: #222;
 }
 
 .navbar-mobile > ul > li {
   padding: 0;
 }
 
-.navbar-mobile a:hover:before, .navbar-mobile li:hover > a:before, .navbar-mobile .active:before {
+.navbar-mobile a:hover::before,
+.navbar-mobile li:hover > a::before,
+.navbar-mobile .active::before {
   visibility: hidden;
 }
 
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
   color: #106eea;
 }
 
@@ -409,7 +433,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   visibility: visible;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
 }
 
 .navbar-mobile .dropdown ul li {
@@ -424,7 +448,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
   color: #106eea;
 }
 
@@ -432,9 +458,9 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Hero Section
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 #hero {
   width: 100%;
   height: 75vh;
@@ -443,7 +469,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-#hero:before {
+#hero::before {
   content: "";
   background: rgba(255, 255, 255, 0.6);
   position: absolute;
@@ -462,7 +488,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #222222;
+  color: #222;
   font-family: "Poppins", sans-serif;
 }
 
@@ -471,7 +497,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 {
-  color: #555555;
+  color: #555;
   margin: 5px 0 30px 0;
   font-size: 24px;
   font-weight: 400;
@@ -499,7 +525,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   transition: 0.5s;
   margin-left: 25px;
-  color: #222222;
+  color: #222;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -531,16 +557,20 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     height: 100vh;
   }
+
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
   }
+
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
-  #hero .btn-get-started, #hero .btn-watch-video {
+
+  #hero .btn-get-started,
+  #hero .btn-watch-video {
     font-size: 13px;
   }
 }
@@ -551,9 +581,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Sections General
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -602,9 +632,9 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Breadcrumbs
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .breadcrumbs {
   padding: 20px 0;
   background-color: #f1f6fe;
@@ -647,17 +677,19 @@ section {
   .breadcrumbs .d-flex {
     display: block !important;
   }
+
   .breadcrumbs ol {
     display: block;
   }
+
   .breadcrumbs ol li {
     display: inline-block;
   }
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Featured Services
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .featured-services .icon-box {
   padding: 30px;
   position: relative;
@@ -684,7 +716,7 @@ section {
 .featured-services .icon-box:hover::before {
   background: #106eea;
   top: 0;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .featured-services .icon {
@@ -714,7 +746,8 @@ section {
   margin-bottom: 0;
 }
 
-.featured-services .icon-box:hover .title a, .featured-services .icon-box:hover .description {
+.featured-services .icon-box:hover .title a,
+.featured-services .icon-box:hover .description {
   color: #fff;
 }
 
@@ -722,9 +755,9 @@ section {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # About
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -747,7 +780,7 @@ section {
 
 .about .content ul i {
   background: #fff;
-  box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+  box-shadow: 0 6px 15px rgba(16, 110, 234, 0.12);
   font-size: 24px;
   padding: 20px;
   margin-right: 15px;
@@ -757,7 +790,7 @@ section {
 
 .about .content ul h5 {
   font-size: 18px;
-  color: #555555;
+  color: #555;
 }
 
 .about .content ul p {
@@ -768,9 +801,9 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Skills
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .skills .progress {
   height: 60px;
   display: block;
@@ -785,7 +818,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #222222;
+  color: #222;
 }
 
 .skills .progress .skill .val {
@@ -801,13 +834,13 @@ section {
 .skills .progress-bar {
   width: 1px;
   height: 10px;
-  transition: .9s;
+  transition: 0.9s;
   background-color: #106eea;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Counts
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .counts {
   padding: 70px 0 60px;
 }
@@ -852,9 +885,9 @@ section {
   font-size: 14px;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Clients
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .clients {
   padding: 15px 0;
   text-align: center;
@@ -877,9 +910,9 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Services
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .services .icon-box {
   text-align: center;
   border: 1px solid #e2eefd;
@@ -915,7 +948,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #222222;
+  color: #222;
   transition: ease-in-out 0.3s;
 }
 
@@ -927,10 +960,11 @@ section {
 
 .services .icon-box:hover {
   border-color: #fff;
-  box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
+  box-shadow: 0 0 25px 0 rgba(16, 110, 234, 0.1);
 }
 
-.services .icon-box:hover h4 a, .services .icon-box:hover .icon i {
+.services .icon-box:hover h4 a,
+.services .icon-box:hover .icon i {
   color: #106eea;
 }
 
@@ -938,9 +972,9 @@ section {
   border-color: #106eea;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Testimonials
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .testimonials {
   padding: 80px 0;
   background: url("../img/testimonials-bg.jpg") no-repeat;
@@ -988,7 +1022,8 @@ section {
   margin: 0 0 15px 0;
 }
 
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
   color: rgba(255, 255, 255, 0.4);
   font-size: 26px;
 }
@@ -1034,9 +1069,9 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Portfolio
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 15px auto;
@@ -1054,12 +1089,13 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: #444;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   color: #106eea;
 }
 
@@ -1087,16 +1123,17 @@ section {
   font-size: 18px;
   color: #fff;
   font-weight: 600;
-  color: #222222;
+  color: #222;
 }
 
 .portfolio .portfolio-item .portfolio-info p {
-  color: #555555;
+  color: #555;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link, .portfolio .portfolio-item .portfolio-info .details-link {
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
   position: absolute;
   right: 40px;
   font-size: 24px;
@@ -1104,7 +1141,8 @@ section {
   color: #3c3c3c;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
+.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.portfolio .portfolio-item .portfolio-info .details-link:hover {
   color: #106eea;
 }
 
@@ -1139,9 +1177,9 @@ section {
   bottom: 20px;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Portfolio Details
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .portfolio-details {
   padding-top: 40px;
 }
@@ -1169,7 +1207,7 @@ section {
 
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(34, 34, 34, 0.08);
+  box-shadow: 0 0 30px rgba(34, 34, 34, 0.08);
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -1204,9 +1242,9 @@ section {
   padding: 0;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Team
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .team {
   padding: 60px 0;
 }
@@ -1216,7 +1254,7 @@ section {
   overflow: hidden;
   border-radius: 4px;
   background: #fff;
-  box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15);
+  box-shadow: 0 2px 15px rgba(16, 110, 234, 0.15);
 }
 
 .team .member .member-img {
@@ -1236,7 +1274,7 @@ section {
 
 .team .member .social a {
   transition: color 0.3s;
-  color: #222222;
+  color: #222;
   margin: 0 3px;
   padding-top: 7px;
   border-radius: 4px;
@@ -1264,21 +1302,21 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #222222;
+  color: #222;
 }
 
 .team .member .member-info span {
   display: block;
   font-size: 13px;
   font-weight: 400;
-  color: #aaaaaa;
+  color: #aaa;
 }
 
 .team .member .member-info p {
   font-style: italic;
   font-size: 14px;
   line-height: 26px;
-  color: #777777;
+  color: #777;
 }
 
 .team .member:hover .social {
@@ -1286,14 +1324,14 @@ section {
   bottom: 15px;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Pricing
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .pricing .box {
   padding: 20px;
   background: #fff;
   text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
   position: relative;
   overflow: hidden;
@@ -1305,7 +1343,7 @@ section {
   padding: 20px 15px;
   font-size: 16px;
   font-weight: 600;
-  color: #777777;
+  color: #777;
   background: #f8f8f8;
 }
 
@@ -1332,7 +1370,7 @@ section {
 .pricing .box ul {
   padding: 0;
   list-style: none;
-  color: #444444;
+  color: #444;
   text-align: center;
   line-height: 20px;
   font-size: 14px;
@@ -1396,9 +1434,9 @@ section {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Frequently Asked Questions
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .faq {
   padding: 60px 0;
 }
@@ -1461,11 +1499,11 @@ section {
   transition: 0.6s;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Contact
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 .contact .info-box {
-  color: #444444;
+  color: #444;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
   padding: 20px 0 30px 0;
@@ -1481,7 +1519,7 @@ section {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  color: #777;
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1527,7 +1565,7 @@ section {
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .php-email-form .loading::before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1544,13 +1582,15 @@ section {
   margin-bottom: 20px;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
   border-color: #106eea;
 }
 
@@ -1579,6 +1619,7 @@ section {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -1588,18 +1629,19 @@ section {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Footer
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 #footer {
   background: #fff;
   padding: 0 0 30px 0;
-  color: #444444;
+  color: #444;
   font-size: 14px;
   background: #f1f6fe;
 }
@@ -1625,7 +1667,7 @@ section {
   padding: 6px 10px;
   position: relative;
   border-radius: 4px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
   text-align: left;
 }
 
@@ -1648,7 +1690,7 @@ section {
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
@@ -1681,13 +1723,13 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Roboto", sans-serif;
-  color: #777777;
+  color: #777;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  color: #444;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1720,7 +1762,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: #777;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1761,11 +1803,12 @@ section {
   float: right;
   text-align: center;
   font-size: 13px;
-  color: #444444;
+  color: #444;
 }
 
 @media (max-width: 768px) {
-  #footer .copyright, #footer .credits {
+  #footer .copyright,
+  #footer .credits {
     float: none;
     text-align: center;
     padding: 2px 0;
