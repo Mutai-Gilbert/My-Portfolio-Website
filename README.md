@@ -1,5 +1,7 @@
 # Personal Portfolio
+
 Visit <a href="https://mutai-gilbert.netlify.app">Here</a>
+
 > This project help to know how to build the a portfolio website and also implement best practices (e.g. linters).
 
 
