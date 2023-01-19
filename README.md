@@ -20,6 +20,7 @@ The objectives of this project is to:
 - HTML
 - CSS
 - CSS Flexbox
+- JavaScript
 
 ## Live Demo
 
