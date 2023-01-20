@@ -21,6 +21,7 @@ The objectives of this project is to:
 - CSS
 - CSS Flexbox
 - JavaScript
+- Bootstrap
 
 ## Live Demo
 
